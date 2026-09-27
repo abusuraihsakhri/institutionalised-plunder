@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abusuraihsakhri.github.io/institutionalised-plunder/sitemap.xml

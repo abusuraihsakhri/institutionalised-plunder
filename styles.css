@@ -1,0 +1,175 @@
+:root {
+  --bg: #fafafa;
+  --paper: #ffffff;
+  --text: #1c1c1c;
+  --muted: #6b6b6b;
+  --line: #e5e5e5;
+  --accent: #1f5fae;
+  --max: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.72;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--line);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.site-name {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.repo-link {
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+main {
+  padding: 72px 22px 90px;
+}
+
+article {
+  max-width: var(--max);
+  margin: 0 auto;
+  background: var(--paper);
+}
+
+.hero {
+  margin-bottom: 46px;
+}
+
+.kicker {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  max-width: 720px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: clamp(2.7rem, 7vw, 5rem);
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+
+.subtitle {
+  margin: 18px 0 0;
+  max-width: 650px;
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: clamp(1.15rem, 2.3vw, 1.45rem);
+  line-height: 1.45;
+}
+
+.lead {
+  font-size: 1.18em;
+  line-height: 1.68;
+}
+
+p {
+  margin: 0 0 1.45em;
+}
+
+h2 {
+  margin: 2.2em 0 .7em;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  letter-spacing: -.025em;
+}
+
+sup {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: .68em;
+}
+
+.references {
+  margin-top: 64px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+
+.references ol {
+  margin: 0;
+  padding-left: 22px;
+  color: #4f4f4f;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.references li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+.note {
+  margin-top: 44px;
+  padding: 18px 20px;
+  border-left: 3px solid #c9c9c9;
+  background: #f5f5f5;
+  color: #5f5f5f;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 24px 42px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .topbar { padding: 18px; }
+  main { padding: 48px 18px 68px; }
+  h1 { font-size: clamp(2.5rem, 14vw, 4rem); }
+  footer { padding: 24px 18px 36px; }
+}
+
+@media print {
+  body { background: white; }
+  .topbar, footer { display: none; }
+  main { padding: 0; }
+}
